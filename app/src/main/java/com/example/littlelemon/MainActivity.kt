@@ -22,10 +22,16 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun HomeScreen(){
-    Column {
+    Scaffold(
+        topBar = {
+            TopAppBar()
+        }
+    ) {
+        Column {
             UpperPanel()
             LowerPanel()
         }
     }
+}
 
 
